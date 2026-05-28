@@ -1,0 +1,101 @@
+2026-05-27 19:58:47 | DEBUG | P03 | KAFKA_BOOTSTRAP_SERVERS           = localhost:9092
+2026-05-27 19:58:47 | DEBUG | P03 | KAFKA_BROKER_ADDRESS_FAMILY       = v6
+2026-05-27 19:58:47 | DEBUG | P03 | KAFKA_TOPIC                       = streaming-03-analytics-case
+2026-05-27 19:58:47 | DEBUG | P03 | KAFKA_CLEAR_TOPIC_ON_START        = true
+2026-05-27 19:58:47 | DEBUG | P03 | PRODUCER_MESSAGE_COUNT            = 3
+2026-05-27 19:58:47 | DEBUG | P03 | PRODUCER_MESSAGE_INTERVAL_SECONDS = 2
+2026-05-27 19:58:47 | DEBUG | P03 | PRODUCER_MAX_MESSAGES             = 50
+2026-05-27 19:58:47 | DEBUG | P03 | PRODUCER_POLL_INTERVAL_SECONDS    = 15
+2026-05-27 19:58:47 | DEBUG | P03 | KAFKA_GROUP_ID                    = streaming-consumer-group-A
+2026-05-27 19:58:47 | DEBUG | P03 | KAFKA_AUTO_OFFSET_RESET           = earliest
+2026-05-27 19:58:47 | DEBUG | P03 | CONSUMER_TIMEOUT_SECONDS          = 10
+2026-05-27 19:58:47 | DEBUG | P03 | CONSUMER_MAX_MESSAGES             = 1000
+2026-05-27 19:58:47 | INFO | P03 | === RUN START ===
+2026-05-27 19:58:47 | INFO | P03 | project=P03
+2026-05-27 19:58:47 | INFO | P03 | repo_dir=streaming-03-analytics
+2026-05-27 19:58:47 | INFO | P03 | python=3.14.2
+2026-05-27 19:58:47 | INFO | P03 | os=Windows 11
+2026-05-27 19:58:47 | INFO | P03 | shell=powershell
+2026-05-27 19:58:47 | INFO | P03 | cwd=.
+2026-05-27 19:58:47 | INFO | P03 | github_actions=False
+2026-05-27 19:58:47 | INFO | P03 | ========================
+2026-05-27 19:58:47 | INFO | P03 | START producer main()
+2026-05-27 19:58:47 | INFO | P03 | ========================
+2026-05-27 19:58:47 | INFO | P03 | ROOT_DIR = .
+2026-05-27 19:58:47 | INFO | P03 | DATA_DIR = data
+2026-05-27 19:58:47 | INFO | P03 | SALES_CSV = data\sales.csv
+2026-05-27 19:58:47 | INFO | P03 | REGIONS_CSV = data\regions.csv
+2026-05-27 19:58:47 | INFO | P03 | PRODUCTS_CSV = data\products.csv
+2026-05-27 19:58:47 | INFO | P03 | REJECTED_SALES_CSV = data\output\producer_rejected_sales.csv
+2026-05-27 19:58:47 | INFO | P03 | ========================
+2026-05-27 19:58:47 | INFO | P03 | SECTION A. Acquire
+2026-05-27 19:58:47 | INFO | P03 | ========================
+2026-05-27 19:58:47 | INFO | P03 | Loading settings from .env...
+2026-05-27 19:58:47 | INFO | P03 | KAFKA_BOOTSTRAP_SERVERS           = localhost:9092
+2026-05-27 19:58:47 | INFO | P03 | KAFKA_TOPIC                       = streaming-03-analytics-case
+2026-05-27 19:58:47 | INFO | P03 | PRODUCER_MESSAGE_COUNT            = 3
+2026-05-27 19:58:47 | INFO | P03 | PRODUCER_MESSAGE_INTERVAL_SECONDS = 2.0
+2026-05-27 19:58:47 | INFO | P03 | KAFKA_CLEAR_TOPIC_ON_START        = True
+2026-05-27 19:58:47 | INFO | P03 | Verifying Kafka connection...
+2026-05-27 19:58:52 | ERROR | P03 | !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Python code is running,
+but Kafka is not available.
+Kafka is not reachable.
+The program tried to connect to:
+    KAFKA_BOOTSTRAP_SERVERS = localhost:9092
+
+CHECK:
+1. Start Kafka first. Follow START_KAFKA.md.
+2. Verify Kafka is running. In a terminal, run:
+   cd ~/kafka
+   bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+3. Verify the topic exists. Follow MANAGE_TOPIC.md.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-05-27 19:59:01 | DEBUG | C03 | KAFKA_BOOTSTRAP_SERVERS           = localhost:9092
+2026-05-27 19:59:01 | DEBUG | C03 | KAFKA_BROKER_ADDRESS_FAMILY       = v6
+2026-05-27 19:59:01 | DEBUG | C03 | KAFKA_TOPIC                       = streaming-03-analytics-case
+2026-05-27 19:59:01 | DEBUG | C03 | KAFKA_CLEAR_TOPIC_ON_START        = true
+2026-05-27 19:59:01 | DEBUG | C03 | PRODUCER_MESSAGE_COUNT            = 3
+2026-05-27 19:59:01 | DEBUG | C03 | PRODUCER_MESSAGE_INTERVAL_SECONDS = 2
+2026-05-27 19:59:01 | DEBUG | C03 | PRODUCER_MAX_MESSAGES             = 50
+2026-05-27 19:59:01 | DEBUG | C03 | PRODUCER_POLL_INTERVAL_SECONDS    = 15
+2026-05-27 19:59:01 | DEBUG | C03 | KAFKA_GROUP_ID                    = streaming-consumer-group-A
+2026-05-27 19:59:01 | DEBUG | C03 | KAFKA_AUTO_OFFSET_RESET           = earliest
+2026-05-27 19:59:01 | DEBUG | C03 | CONSUMER_TIMEOUT_SECONDS          = 10
+2026-05-27 19:59:01 | DEBUG | C03 | CONSUMER_MAX_MESSAGES             = 1000
+2026-05-27 19:59:01 | DEBUG | P03 | KAFKA_BOOTSTRAP_SERVERS           = localhost:9092
+2026-05-27 19:59:01 | DEBUG | P03 | KAFKA_BROKER_ADDRESS_FAMILY       = v6
+2026-05-27 19:59:01 | DEBUG | P03 | KAFKA_TOPIC                       = streaming-03-analytics-case
+2026-05-27 19:59:01 | DEBUG | P03 | KAFKA_CLEAR_TOPIC_ON_START        = true
+2026-05-27 19:59:01 | DEBUG | P03 | PRODUCER_MESSAGE_COUNT            = 3
+2026-05-27 19:59:01 | DEBUG | P03 | PRODUCER_MESSAGE_INTERVAL_SECONDS = 2
+2026-05-27 19:59:01 | DEBUG | P03 | PRODUCER_MAX_MESSAGES             = 50
+2026-05-27 19:59:01 | DEBUG | P03 | PRODUCER_POLL_INTERVAL_SECONDS    = 15
+2026-05-27 19:59:01 | DEBUG | P03 | KAFKA_GROUP_ID                    = streaming-consumer-group-A
+2026-05-27 19:59:01 | DEBUG | P03 | KAFKA_AUTO_OFFSET_RESET           = earliest
+2026-05-27 19:59:01 | DEBUG | P03 | CONSUMER_TIMEOUT_SECONDS          = 10
+2026-05-27 19:59:01 | DEBUG | P03 | CONSUMER_MAX_MESSAGES             = 1000
+2026-05-27 19:59:07 | DEBUG | C03 | KAFKA_BOOTSTRAP_SERVERS           = localhost:9092
+2026-05-27 19:59:07 | DEBUG | C03 | KAFKA_BROKER_ADDRESS_FAMILY       = v6
+2026-05-27 19:59:07 | DEBUG | C03 | KAFKA_TOPIC                       = streaming-03-analytics-case
+2026-05-27 19:59:07 | DEBUG | C03 | KAFKA_CLEAR_TOPIC_ON_START        = true
+2026-05-27 19:59:07 | DEBUG | C03 | PRODUCER_MESSAGE_COUNT            = 3
+2026-05-27 19:59:07 | DEBUG | C03 | PRODUCER_MESSAGE_INTERVAL_SECONDS = 2
+2026-05-27 19:59:07 | DEBUG | C03 | PRODUCER_MAX_MESSAGES             = 50
+2026-05-27 19:59:07 | DEBUG | C03 | PRODUCER_POLL_INTERVAL_SECONDS    = 15
+2026-05-27 19:59:07 | DEBUG | C03 | KAFKA_GROUP_ID                    = streaming-consumer-group-A
+2026-05-27 19:59:07 | DEBUG | C03 | KAFKA_AUTO_OFFSET_RESET           = earliest
+2026-05-27 19:59:07 | DEBUG | C03 | CONSUMER_TIMEOUT_SECONDS          = 10
+2026-05-27 19:59:07 | DEBUG | C03 | CONSUMER_MAX_MESSAGES             = 1000
+2026-05-27 19:59:07 | DEBUG | P03 | KAFKA_BOOTSTRAP_SERVERS           = localhost:9092
+2026-05-27 19:59:07 | DEBUG | P03 | KAFKA_BROKER_ADDRESS_FAMILY       = v6
+2026-05-27 19:59:07 | DEBUG | P03 | KAFKA_TOPIC                       = streaming-03-analytics-case
+2026-05-27 19:59:07 | DEBUG | P03 | KAFKA_CLEAR_TOPIC_ON_START        = true
+2026-05-27 19:59:07 | DEBUG | P03 | PRODUCER_MESSAGE_COUNT            = 3
+2026-05-27 19:59:07 | DEBUG | P03 | PRODUCER_MESSAGE_INTERVAL_SECONDS = 2
+2026-05-27 19:59:07 | DEBUG | P03 | PRODUCER_MAX_MESSAGES             = 50
+2026-05-27 19:59:07 | DEBUG | P03 | PRODUCER_POLL_INTERVAL_SECONDS    = 15
+2026-05-27 19:59:07 | DEBUG | P03 | KAFKA_GROUP_ID                    = streaming-consumer-group-A
+2026-05-27 19:59:07 | DEBUG | P03 | KAFKA_AUTO_OFFSET_RESET           = earliest
+2026-05-27 19:59:07 | DEBUG | P03 | CONSUMER_TIMEOUT_SECONDS          = 10
+2026-05-27 19:59:07 | DEBUG | P03 | CONSUMER_MAX_MESSAGES             = 1000

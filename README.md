@@ -1,4 +1,6 @@
 # streaming-03-analytics
+## Module 3 Streaming Analytics
+### By Jarred Gastreich, May 2026
 
 [![API Reference](https://img.shields.io/badge/API--Utils-datafun--streaming-purple)](https://denisecase.github.io/datafun-streaming/api/)
 [![Workflow Guide](https://img.shields.io/badge/Pro--Guide-pro--analytics--02-green)](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
