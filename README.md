@@ -248,3 +248,7 @@ If you see something like this in your terminal: `>>>` or `...`
 You accidentally started Python interactive mode.
 It happens.
 Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
+
+
+Start kakfa server:
+~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties
