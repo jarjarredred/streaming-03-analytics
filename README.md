@@ -1,6 +1,11 @@
 # streaming-03-analytics
 ## Module 3 Streaming Analytics
 ### By Jarred Gastreich, May 2026
+### Link: https://github.com/jarjarredred/streaming-03-analytics
+
+### Small technical modification:
+Updated consumer_jarred with small addition to the process_message function to track new metric: total count of sales. Updated runningstates logs to improve visibility and know exactly which number message we are on to help identify potential bottlenecks or data gaps.
+
 
 [![API Reference](https://img.shields.io/badge/API--Utils-datafun--streaming-purple)](https://denisecase.github.io/datafun-streaming/api/)
 [![Workflow Guide](https://img.shields.io/badge/Pro--Guide-pro--analytics--02-green)](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
